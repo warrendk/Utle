@@ -24,7 +24,6 @@ public class PlayerResource {
 
     @GetMapping("/all")
     public ResponseEntity<List<Player>> getAllPlayers() {
-
         List<Player> Players = PlayerService.findAllPlayers();
         return new ResponseEntity<>(Players, HttpStatus.OK);
     }

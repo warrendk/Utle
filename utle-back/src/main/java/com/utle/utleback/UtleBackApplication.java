@@ -9,7 +9,7 @@ import org.springframework.web.filter.CorsFilter;
 
 import java.util.Arrays;
 
-@SpringBootApplication
+@SpringBootApplication()
 public class UtleBackApplication {
 
 	public static void main(String[] args) {
@@ -31,4 +31,6 @@ public class UtleBackApplication {
 		urlBasedCorsConfigurationSource.registerCorsConfiguration("/**", corsConfiguration);
 		return new CorsFilter(urlBasedCorsConfigurationSource);
 	}
+
+
 }
